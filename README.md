@@ -1,13 +1,17 @@
 Link_state_Routing
 
-Implemented Features 
-⚫ Correct operation of the link state protocol 
-⚫ Mechanism to restrict link-state broadcasts 
-⚫ Appropriate handling of dead nodes, whereby the least-cost paths are updated to 
-reflect the change in topology 
-⚫ Detect the id and port number of the dead node that joins back 
-⚫ Other nodes can detect the node when a dead node joins back the topology 
-⚫ But I did not find the join back node cost and position in topology. 
+Implemented Features：
+
+Correct operation of the link state protocol 
+
+Mechanism to restrict link-state broadcasts 
+
+Appropriate handling of dead nodes, whereby the least-cost paths are updated to reflect the change in topology 
+
+Detect the id and port number of the dead node that joins back 
+
+Other nodes can detect the node when a dead node joins back the topology 
+ 
 
 To deal with node failures, in update graph function, if another node information has 
 not updated in 3 second, the node is removed. Neighbors of failed node can detect node 
